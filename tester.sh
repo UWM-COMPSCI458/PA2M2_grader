@@ -12,14 +12,12 @@ function test_asm() {
   echo "### Assembly code:"
   echo "\`\`\`"
   cat "$1.asm"
-  echo
   echo "\`\`\`"
   echo
 
   echo "### Text:"
   echo "\`\`\`"
   cat "$1.text"
-  echo
   echo "\`\`\`"
   echo
 
@@ -27,14 +25,12 @@ function test_asm() {
   echo "### Data:"
   echo "\`\`\`"
   cat "$1.data"
-  echo
   echo "\`\`\`"
   echo
 
   echo "### Provided input:"
   echo "\`\`\`"
   cat "$1.in"
-  echo
   echo "\`\`\`"
   echo
 
@@ -42,7 +38,6 @@ function test_asm() {
   echo "### Expected output:"
   echo "\`\`\`"
   cat "$1.out"
-  echo
   echo "\`\`\`"
   echo
 
@@ -57,7 +52,6 @@ function test_asm() {
   echo "### Evaluated output:"
   echo "\`\`\`"
   echo $result
-  echo
   echo "\`\`\`"
   echo
 
