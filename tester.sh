@@ -58,14 +58,14 @@ function test_asm() {
   correct_result=$(cat curtest.out)
 
 
-  if [ $result != $correct_result ]; then
+  if [ "$result" != "$correct_result" ]; then
     SCORE=0
   fi
     
 
   echo
   
-  if [ "$SCORE" -eq 0 ]; then
+  if [ $SCORE -eq 0 ]; then
     echo "**Evaluated output did not match the expected output**"
     echo "**Score for $1: 0 / $MAX_SCORE ❌**"
   else
