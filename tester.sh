@@ -12,33 +12,38 @@ function test_asm() {
   echo "### Assembly code:"
   echo "\`\`\`"
   cat "$1.asm"
-  echo "\n\`\`\`"
+  echo
+  echo "\`\`\`"
   echo
 
   echo "### Text:"
   echo "\`\`\`"
   cat "$1.text"
-  echo "\n\`\`\`"
+  echo
+  echo "\`\`\`"
   echo
 
 
   echo "### Data:"
   echo "\`\`\`"
   cat "$1.data"
-  echo "\n\`\`\`"
+  echo
+  echo "\`\`\`"
   echo
 
   echo "### Provided input:"
   echo "\`\`\`"
   cat "$1.in"
-  echo "\n\`\`\`"
+  echo
+  echo "\`\`\`"
   echo
 
   
   echo "### Expected output:"
   echo "\`\`\`"
   cat "$1.out"
-  echo "\n\`\`\`"
+  echo
+  echo "\`\`\`"
   echo
 
   cp "$1.asm" curtest.asm
@@ -52,7 +57,8 @@ function test_asm() {
   echo "### Evaluated output:"
   echo "\`\`\`"
   echo $result
-  echo "\n\`\`\`"
+  echo
+  echo "\`\`\`"
   echo
 
   correct_result=$(cat curtest.out)
